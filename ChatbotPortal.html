@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -278,19 +278,20 @@
     </div>
 
     <script id="respond-io-widget"
-            src="YOUR_RESPOND_IO_WIDGET_SCRIPT_URL_HERE"
+            src="https://cdn.respond.io/webchat/widget/widget.js?cId=10220a25504c1c298ce85f5f3ee9fb0"
             defer>
     </script>
+    <!-- https://respond.io -->
 
     <script>
-    function openChat() {
+        function openChat() {
 
-      if (window.respondIO && typeof window.respondIO.open === 'function') {
-        window.respondIO.open();
-      } else {
-        alert('Chat widget not loaded yet — please add your respond.io script URL.');
-      }
-    }
+            if (window.respondIO && typeof window.respondIO.open === 'function') {
+                window.respondIO.open();
+            } else {
+                alert('Chat widget not loaded yet — please add your respond.io script URL.');
+            }
+        }
     </script>
 
 </body>
