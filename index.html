@@ -285,13 +285,10 @@
 
     <script>
         function openChat() {
-
-            if (window.respondIO && typeof window.respondIO.open === 'function') {
-                window.respondIO.open();
-            } else {
-                alert('Chat widget not loaded yet — please add your respond.io script URL.');
-            }
+    if (window.$respond) {
+        window.$respond.do('chat:open');
         }
+    }
     </script>
 
 </body>
